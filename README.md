@@ -1,2 +1,2 @@
 # Mileston
-my first HTML and CSS combaind project for pw-skill assignment
+My first HTML and CSS combaind project for pw-skill assignment.
