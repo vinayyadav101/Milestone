@@ -1,518 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <link rel="stylesheet" href="NFT.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer />
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-      }
-    </style>
-  </head>
-  <body class="overflow-x-hidden grid justify-center bg-[#160e2a]">
-    <div
-      class="page1 grid overflow-hidden w-[120vw] px-[10vw]"
-      style="border-radius: 0% 0% 65% 65% / 11% 12% 35% 35%"
-    >
-      <div
-        style="
-          background: radial-gradient(
-            at top left,
-            fuchsia,
-            rgb(1, 1, 131),
-            rgb(23, 1, 52),
-            rgb(25, 1, 50)
-          );
-        "
-        class="page1 flex flex-col justify-center"
-      >
-        <div
-          class="nav flex justify-center border-b-[3px] border-white w-full relative z-50"
-        >
-          <div class="flex w-[90%]">
-            <div
-              class="nav flex justify-between w-full items-center py-5 relative z-20"
-            >
-              <img src="./assets/logo.png" alt="" class="h-full" />
-              <div class="flex text-xl gap-8 ml-64 text-white">
-                <p class="">MARKETPLACE</p>
-                <p class="">ABOUT</p>
-                <p class="">RESOURCES</p>
-                <p class="">FAQ</p>
-              </div>
-              <div class="flex gap-3">
-                <div
-                  style="background: linear-gradient(to right, blue, purple)"
-                  class="rounded-xl h-fit p-1"
-                >
-                  <button
-                    class="text-xl bg-black text-white w-32 py-2 rounded-lg"
-                  >
-                    Log In
-                  </button>
+    <!-- .........Stylesheet Link............. -->
+    <link rel="stylesheet" href="NFT.css">
+    <!-- ...............Font Awesome CDN............. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class= "bg-gradient-to-br from-pink-400 via-blue-900 to-slate-900 rounded-b-[100px] z-50">
+            <nav class="w-full h-20 fixed -top-1 left-0 right-0 backdrop-blur-sm shadow-md border-b-2 border-white px-10 flex items-center justify-between z-50">
+                <img class="w-10 md::w-auto" src="./assets/logo.png" alt="logo">
+                <ul class="hidden md:flex items-center justify-center gap-x-10 text-white">
+                    <li class="font-semibold hover:scale-110 transition-all cursor-pointer">MARKETPLACE</li>
+                    <li class="font-semibold hover:scale-110 transition-all cursor-pointer">RESOURCE</li>
+                    <li class="font-semibold hover:scale-110 transition-all cursor-pointer">ABOUT</li>
+                    <li class="font-semibold hover:scale-110 transition-all cursor-pointer">FAQ's</li>
+                </ul>
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars fa-2xl text-white"></i>
                 </div>
-                <div
-                  style="background: linear-gradient(to right, blue, purple)"
-                  class="rounded-xl h-fit p-1"
-                >
-                  <button
-                    class="text-xl bg-black text-white w-32 py-2 rounded-lg"
-                  >
-                    Sign Up
-                  </button>
+                <div class="hidden md:flex items-center justify-center gap-x-4">
+                    <div class="p-1 bg-gradient-to-r from-blue-400 to-violet-700 flex items-center justify-center rounded-md hover:scale-105"><button class="py-2 px-5 lg:px-10 bg-black text-white font-bold rounded-md">Log In</button></div>
+                    <div class="p-1 bg-gradient-to-r from-blue-400 to-violet-700 flex items-center justify-center rounded-md hover:scale-105"><button class="py-2 px-5 lg:px-10 bg-black text-white font-bold rounded-md">Sign Up</button></div>
+                    
                 </div>
-              </div>
-            </div>
-            <div class="main"></div>
-          </div>
-        </div>
-        <div class="flex w-[90%] m-auto justify-between overflow-hidden">
-          <div class="left w-1/2 pt-28">
-            <div class="">
-              <h1 class="text-[#c300ff] font-semibold text-7xl mb-3">
-                keep Clam &
-              </h1>
-              <h1 class="text-[#7403ff] font-semibold text-7xl">
-                Collect Your NFTs.
-              </h1>
-            </div>
-            <p class="text-lg text-white mt-10">
-              Lor est Lorem ips dolor sit amet. ve asperiores, et deserunt
-              eligendi expedita dolore sint illum possimus consequatur quas
-              itaque reiciendis eius eum ipsum delectus quisquam id adipisci
-              tempora inventore.
-            </p>
-            <div class="flex mt-10 gap-5">
-              <div>
-                <span
-                  class="drop-shadow-2xl relative top-3"
-                  style="
-                    background: linear-gradient(
-                      to bottom right,
-                      #c300ff 0%,
-                      #3503ff 100%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-size: 30px;
-                  "
-                  class=""
-                  ><i class="fa-solid fa-play fa-2xl"></i
-                ></span>
-              </div>
-              <div class="">
-                <h1 class="text-white text-xl mb-3">Let's get started</h1>
-                <p class="text-base text-slate-200">
-                  Watch this quick demo video to see <br />
-                  how to get started.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-1/2 flex justify-end h-fit">
-            <div class="overflow-hidden h-[620px]">
-              <img src="./assets/image.png" alt="" class="relative bottom-24" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="page2 text-white w-[100vw] m-auto flex justify-center mt-32">
-      <div class="inside w-[90vw] flex flex-col h-fit">
-        <div class="one flex w-full justify-center">
-          <div class="flex items-center">
-            <div
-              style="background: linear-gradient(to bottom, #3503ff, #c300ff)"
-              class="circle w-20 h-20 rounded-full"
-            ></div>
-            <p class="text-5xl relative z-50 right-12">Top Creators</p>
-          </div>
-        </div>
-        <div class="two mt-20">
-          <img src="./assets/map.png" alt="" class="w-full" />
-        </div>
-        <div class="flex justify-center mt-10">
-          <div
-            style="background: linear-gradient(to right, blue, purple)"
-            class="rounded-xl h-fit p-1"
-          >
-            <button class="text-xl bg-black text-white w-56 py-2 rounded-lg">
-              View All Collectors
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="page3 text-white w-[100vw] m-auto flex justify-center mt-56"
-      style="
-        background: radial-gradient(
-          circle 300px at left center,
-          #7504d71f 50px,
-          #6311a141 200px,
-          #160e2a 300px
-        );
-      "
-    >
-      <div class="inside w-[90vw] flex justify-between">
-        <div class="left w-1/2">
-          <div class="flex gap-28 flex-wrap">
-            <div class="card border-2 border-white pb-4">
-              <img
-                src="./assets/Image 1.png"
-                alt=""
-                style="
-                  background: radial-gradient(at top left, #3503ff, #c300ff);
-                "
-                class="w-full px-8 py-5 relative z-50 left-10 bottom-10"
-              />
-              <div class="px-5 mt-[-20px]">
-                <p class="text-2xl">Ancient Ones</p>
-                <p class="text-xl">
-                  <span class="mr-2 text-base"
-                    ><i class="fa-brands fa-ethereum fa-2xl"></i
-                  ></span>
-                  5.0 ETH
-                </p>
-              </div>
-            </div>
-            <div class="card border-2 border-white pb-4 relative top-14">
-              <img
-                src="./assets/merlin.png"
-                alt=""
-                class="w-full relative z-50 left-10 bottom-10"
-              />
-              <div class="px-5 mt-[-20px]">
-                <p class="text-2xl">Ancient Ones</p>
-                <p class="text-xl">
-                  <span class="mr-2 text-base"
-                    ><i class="fa-brands fa-ethereum fa-2xl"></i
-                  ></span>
-                  3.0 ETH
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-2 border-white pb-4 relative left-8 top-[-50px]"
-            >
-              <img
-                src="./assets/Avatar 1.png"
-                alt=""
-                class="w-full px-4 py-[8px] relative z-50 left-10 bottom-10 bg-[#3d3d3d]"
-              />
-              <div class="px-5 mt-[-20px]">
-                <p class="text-2xl">God of War</p>
-                <p class="text-xl">
-                  <span class="mr-2 text-base"
-                    ><i class="fa-brands fa-ethereum fa-2xl"></i
-                  ></span>
-                  7.0 ETH
-                </p>
-              </div>
-            </div>
-            <div
-              class="card border-2 border-white pb-4 relative top-2 left-[-10px]"
-            >
-              <img
-                src="./assets/Avatar2.png"
-                alt=""
-                class="w-[95%] relative z-50 left-10 bottom-10"
-              />
-              <div class="px-5 mt-[-20px]">
-                <p class="text-2xl">The Watchers</p>
-                <p class="text-xl">
-                  <span class="mr-2 text-base"
-                    ><i class="fa-brands fa-ethereum fa-2xl"></i
-                  ></span>
-                  3.2 ETH
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="right w-1/2 flex items-center">
-          <div class="">
-            <div class="one flex w-full">
-              <div class="flex items-center">
-                <div
-                  style="
-                    background: linear-gradient(to bottom, #3503ff, #c300ff);
-                  "
-                  class="circle w-20 h-20 rounded-full"
-                ></div>
-                <p class="text-5xl relative z-50 right-12">
-                  Latest NFT Collections
-                </p>
-              </div>
-            </div>
-            <p class="text-xl text-[#c7c4b5] pl-14 mt-12">
-              Lorem, iit. Voluptatibus omnis quas consectetur dignissimos rerum
-              delectus temporibus minus ipsa excepturi sequi obcaecati iusto
-              minima voluptatem, necessitatibus expedita hic.
-            </p>
-            <div class="flex pl-16 mt-14">
-              <div
-                style="background: linear-gradient(to right, blue, purple)"
-                class="rounded-xl h-fit p-1"
-              >
-                <button
-                  class="text-xl bg-black text-white w-56 py-2 rounded-lg"
-                >
-                  View All Collectors
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="page4 text-white w-[100vw] m-auto flex justify-start mt-32 pr-44"
-    >
-      <div
-        style="background: linear-gradient(to bottom, #c300ff, #0379ff)"
-        class="py-2 pr-2 rounded-r-full"
-      >
-        <div
-          class="bg-[#0d0819] rounded-r-full px-20 pr-0 flex justify-between"
-        >
-          <div class="left w-[40%] py-24">
-            <div class="flex items-center">
-              <div
-                style="background: linear-gradient(to bottom, #3503ff, #c300ff)"
-                class="circle w-20 h-20 rounded-full"
-              ></div>
-              <p class="text-4xl relative z-50 right-12">Why Choose Us?</p>
-            </div>
-            <div class="mt-16">
-              <p class="text-xl text-[#f6eec5]">
-                Lorem ipsumisicing elit. Velit obcaecati recusandae quidem
-                blanditiis ab repudiandae, libero mollitia consectetur
-                voluptatibus odio aut pariatur aliquid cum deserunt! Sapiente
-                dolor doloribus possimus officiis.
-              </p>
-              <p class="text-xl text-[#f6eec5] mt-8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Possimus enim, sed error vel qui beatae ratione temporibus?
-                Expedita, magni repellat!
-              </p>
-            </div>
-          </div>
-          <div
-            class="right flex w-[50%] flex-col gap-6 justify-center items-center"
-          >
-            <div class="flex flex-col w-fit gap-6">
-              <div class="flex gap-6 relative left-8">
-                <div
-                  class="one flex flex-col border-2 border-[#d5d5d56b] h-fit rounded-xl w-56 py-5 gap-3 items-center"
-                >
-                  <img
-                    src="./assets/simple-icons_marketo.png"
-                    alt=""
-                    class="m-auto"
-                  />
-                  <p class="text-blue-300 text-lg">Marketplace</p>
+            </nav>
+            <div class="flex items-start justify-center flex-col md:flex-row gap-y-5 z-10">
+                <div class="w-full md:w-3/6 flex items-center flex-col gap-y-10 mt-20 px-5 md:px-10">
+                    <h1 class="text-4xl lg:text-6xl font-medium text-blue-300 self-start">Keep Calm & <br>Collect Your NFTs.</h1>
+                    <p class="text-slate-100 font-medium self-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum officiis cupiditate minima aliquid numquam mollitia, voluptates expedita dicta iure impedit.</p>
+                    <div class="flex items-center justify-center gap-x-5 self-start">
+                        <i class="fa-solid fa-play fa-2xl text-violet-800"></i>
+                        <div>
+                            <h1 class="text-2xl text-white font-medium">Let's get started!</h1>
+                            <p class="text-lg text-white">Watch this quick demo video to see<br>how to get started</p>
+                        </div>
+                    </div>
                 </div>
-                <div
-                  class="two flex flex-col border-2 border-[#d5d5d56b] h-fit rounded-xl w-56 py-7 gap-3 items-center"
-                >
-                  <img src="./assets/Vector.png" alt="" class="m-auto w-14" />
-                  <p class="text-blue-300 text-lg">Money Protection</p>
+                <div class="w-full md:w-3/6 px-20 md:px-10 lg:px-20">
+                    <img src="./assets/image.png" alt="">
                 </div>
-              </div>
-              <div class="flex gap-6 relative left-[90px]">
-                <div
-                  class="one flex flex-col border-2 border-[#d5d5d56b] h-fit rounded-xl w-56 py-6 gap-3 items-center"
-                >
-                  <img src="./assets/Vector2.png" alt="" class="m-auto" />
-                  <p class="text-blue-300 text-lg">Data Protection</p>
+            </div>
+        </div>
+        <div class="bg-[#160e2a] w-full pt-40 relative left-0 right-0 -top-32 md:-top-24 -z-20">
+            <div class="flex items-center justify-center gap-x-3">
+                <div class="h-16 md:h-20 w-16 md:w-20 bg-gradient-to-b from-blue-600 to-violet-700 rounded-[50%] flex items-center justify-end"><h1 class="text-2xl md:text-3xl text-white font-semibold tracking-[.2em]">Top</h1></div>
+                <h1 class="text-2xl md:text-3xl text-white font-semibold tracking-[.2em]">Creators</h1>
+            </div>
+            <img class="px-2 py-5" src="./assets/map.png" alt="">
+        </div>
+        <div class="w-full py-10 bg-[#160e2a] -mt-36 md:-mt-24">
+            <div class="max-h-fit max-w-fit mx-auto p-[2px] bg-gradient-to-r from-blue-400 to-violet-700 flex items-center justify-center rounded-md hover:scale-105"><button class="py-2 px-5 lg:px-10 bg-black text-white font-bold rounded-md">View All Collectors</button></div>
+        </div>
+    </header>
+    <!-- Lestest NFT Collections Section -->
+    <section class="bg-[#160e2a]">
+        <div class="flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-violet-600 via-[#160e2a] to-[#160e2a] py-20">
+            <div class="w-full px-3 py-8 md:w-2/5">
+                <div class="w-full flex items-start justify-around flex-wrap gap-10">
+                    <div class="w-2/5 h-64 border-[1px] border-white text-white">
+                        <div class="md:relative bottom-5 left-5 bg-gradient-to-br from-blue-600 to-pink-600 h-4/6 px-10 py-5">
+                            <img class="h-full" src="./assets/Image 1.png" alt="">
+                        </div>
+                        <h1 class="text-md md:text-xl font-semibold ml-5 mt-3">Ancient Ones</h1>
+                        <p class="text-md md:text-lg font-medium ml-5"><i class="fa-brands fa-ethereum" style="color: #fbfbfb;"></i> 5.0 ETH</p>
+                    </div>
+                    <div class="w-2/5 h-64 border-[1px] border-white text-white md:mt-10">
+                        <img class="md:relative bottom-5 left-5 h-4/6 w-full" src="./assets/merlin.png" alt="">
+                        <h1 class="text-md md:text-xl font-semibold ml-5 mt-3">Ancient Ones</h1>
+                        <p class="text-md md:text-lg font-medium ml-5"><i class="fa-brands fa-ethereum" style="color: #fbfbfb;"></i> 5.0 ETH</p>
+                    </div>
+                    <div class="w-2/5 h-64 border-[1px] border-white text-white md:ml-10">
+                        <div class="md:relative bottom-5 left-5 bg-gradient-to-br from-blue-600 to-pink-600 h-4/6 px-10 py-5">
+                            <img class="h-full" src="./assets/Avatar 1.png" alt="">
+                        </div>
+                        <h1 class="text-md md:text-xl font-semibold ml-5 mt-3">Ancient Ones</h1>
+                        <p class="text-md md:text-lg font-medium ml-5"><i class="fa-brands fa-ethereum" style="color: #fbfbfb;"></i> 5.0 ETH</p>
+                    </div>
+                    <div class="w-2/5 h-64 border-[1px] border-white text-white md:hidden lg:block">
+                        <img class="md:relative bottom-5 left-5 h-4/6 w-full" src="./assets/Avatar2.png" alt="">
+                        <h1 class="text-md md:text-xl font-semibold ml-5 mt-3">Ancient Ones</h1>
+                        <p class="text-md md:text-lg font-medium ml-5"><i class="fa-brands fa-ethereum" style="color: #fbfbfb;"></i> 5.0 ETH</p>
+                    </div>
                 </div>
-                <div
-                  class="two flex flex-col border-2 border-[#d5d5d56b] h-fit rounded-xl w-56 py-5 gap-3 items-center"
-                >
-                  <img
-                    src="./assets/healthicons.png"
-                    alt=""
-                    class="m-auto w-14"
-                  />
-                  <p class="text-blue-300 text-lg">Fast & Secure</p>
+            </div>
+            <div class="w-full md:w-3/5">
+                <div>
+                    <div class="flex items-center justify-center">
+                        <div class="h-12 md:h-16 w-12 md:w-16 bg-gradient-to-b from-blue-600 to-violet-700 rounded-[50%] flex items-center justify-end"><h1 class="text-xl md:text-2xl text-white font-semibold tracking-[.2em]">La</h1></div>
+                        <h1 class="text-xl md:text-2xl text-white font-semibold tracking-[.2em]">test NFT Collection</h1>                    
+                    </div>
+                    <p class="text-gray-300 font-medium p-10 md:px-20">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non qui minus unde delectus. Nam suscipit nostrum facere cum laborum ipsum, nesciunt reiciendis amet voluptate ducimus a perferendis laudantium fugiat.</p>
+                    <div class="w-full py-10">
+                        <div class="max-h-fit max-w-fit mx-auto p-[2px] bg-gradient-to-r from-blue-400 to-violet-700 flex items-center justify-center rounded-md hover:scale-105"><button class="py-2 px-5 lg:px-10 bg-black text-white font-bold rounded-md">View All Collectors</button></div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="page5 text-white w-[100vw] m-auto flex justify-center mt-64 pb-40"
-      style="
-        border-bottom: 2px solid #9900ff;
-        border-radius: 0% 0% 50% 50% / 10% 10% 25% 22%;
-      "
-    >
-      <div class="inside w-[90vw] flex flex-col">
-        <div class="one flex w-full justify-center">
-          <div class="flex items-center">
-            <div
-              style="background: linear-gradient(to bottom, #3503ff, #c300ff)"
-              class="circle w-20 h-20 rounded-full"
-            ></div>
-            <p class="text-5xl relative z-50 right-12">
-              Create And Sell Your NFTs
-            </p>
-          </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="bg-[#160e2a] md:py-10">
+            <div class="h-auto w-full md:w-[90%] py-1 pr-1 bg-gradient-to-r from-blue-400 to-violet-700 flex items-center justify-center md:rounded-r-full">
+                <div class="bg-[#0d0819] w-full md:rounded-r-full py-16 flex items-center justify-center flex-col md:flex-row gap-y-5">
+                    <div class="w-full md:w-2/5">
+                        <div class="flex items-center justify-start px-5">
+                            <div class="h-12 md:h-16 w-12 md:w-16 bg-gradient-to-b from-blue-600 to-violet-700 rounded-[50%] flex items-center justify-end"><h1 class="text-xl md:text-2xl text-white font-semibold tracking-[.2em]">W</h1></div>
+                            <h1 class="text-xl md:text-2xl text-white font-semibold tracking-[.2em]">hy Choose Us?</h1>                    
+                        </div>
+                        <p class="text-white font-medium px-5 py-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque porro distinctio maiores, dolor exercitationem aliquam dolorem quas, rem error beatae praesentium deserunt repudiandae! Possimus deleniti veritatis a commodi culpa?</p>                       
+                        <p class="text-white font-medium px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptate.</p>                       
+                    </div>
+                    <div class="w-full md:w-3/5 md:pl-5 lg:pl-28">
+                        <div class="grid grid-cols-1 md:grid-cols-[210px_210px] gap-10 w-full">
+                            <div class="border-2 border-white bg-[#0d0819] rounded-xl h-36 w-52 mx-auto flex items-center justify-center flex-col">
+                                <img class="w-9" src="./assets/simple-icons_marketo.png" alt="">
+                                <p class="text-white font-medium mt-3">Marketplace</p>
+                            </div>
+                            <div class="border-2 border- bg-[#0d0819] rounded-xl h-36 w-52 mx-auto flex items-center justify-center flex-col">
+                                <img class="w-9" src="./assets/Vector2.png" alt="">
+                                <p class="text-white font-medium mt-3">Money Protection</p>
+                            </div>
+                            <div class="border-2 border-white bg-[#0d0819] rounded-xl md:ml-10 h-36 w-52 mx-auto flex items-center justify-center flex-col">
+                                <img class="w-9" src="./assets/Vector.png" alt="">
+                                <p class="text-white font-medium mt-3">Data Protection</p>
+                            </div>
+                            <div class="border-2 border-white bg-[#0d0819] rounded-xl md:ml-10 h-36 w-52 mx-auto flex items-center justify-center flex-col">
+                                <img class="w-9" src="./assets/healthicons.png" alt="">
+                                <p class="text-white font-medium mt-3">Fast & Secure</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>    
+    </section>
+    <!-- Create and sell your NFT Section -->
+    <section class="bg-[#160e2a] py-10 border-b-2 border-b-pink-500 rounded-b-[90px]">
+        <div>
+            <div class="flex items-center justify-center">
+                <div class="h-12 md:h-16 w-12 md:w-16 bg-gradient-to-b from-blue-600 to-violet-700 rounded-[50%] flex items-center justify-end"><h1 class="text-xl md:text-2xl text-white font-semibold tracking-[.2em]">Cr</h1></div>
+                <h1 class="text-xl md:text-2xl text-white font-semibold tracking-[.2em]">eate And sell Your NFTs</h1>                    
+            </div>
         </div>
-        <div class="two flex w-full justify-around mt-28">
-          <div class="card grid">
-            <img src="./assets/wallet-one.png" alt="" class="m-auto" />
-            <h1 class="font-semibold text-3xl mt-5 m-auto">
-              Set Up Your Wallet
-            </h1>
-            <p class="text-xl mt-6 m-auto">
-              Once you've set up your <br />wallet of choice, connect it
-              <br />to OpenSea by clicking the <br />wallet icon in the top
-              right <br />corner. Learn about the <br />wallets we support.
-            </p>
-          </div>
-          <div class="card grid">
-            <img
-              src="./assets/triangle-round-rectangle.svg"
-              alt=""
-              class="m-auto"
-            />
-            <h1 class="font-semibold text-3xl mt-5 m-auto">
-              Create Your Collection
-            </h1>
-            <p class="text-xl mt-6 m-auto">
-              Once you've set up your <br />wallet of choice, connect it
-              <br />to OpenSea by clicking the <br />wallet icon in the top
-              right <br />corner. Learn about the <br />wallets we support.
-            </p>
-          </div>
-          <div class="card grid">
-            <img src="./assets/picture.png" alt="" class="m-auto" />
-            <h1 class="font-semibold text-3xl mt-5 m-auto">
-              Set Up Your Wallet
-            </h1>
-            <p class="text-xl mt-6 m-auto">
-              Once you've set up your <br />wallet of choice, connect it
-              <br />to OpenSea by clicking the <br />wallet icon in the top
-              right <br />corner. Learn about the <br />wallets we support.
-            </p>
-          </div>
-          <div class="card grid">
-            <img src="./assets/shopping-bag.svg" alt="" class="m-auto" />
-            <h1 class="font-semibold text-3xl mt-5 m-auto">
-              Set Up Your Wallet
-            </h1>
-            <p class="text-xl mt-6 m-auto">
-              Once you've set up your <br />wallet of choice, connect it
-              <br />to OpenSea by clicking the <br />wallet icon in the top
-              right <br />corner. Learn about the <br />wallets we support.
-            </p>
-          </div>
+        <div class="flex flex-col md:flex-row gap-y-4 mt-10">
+            <div class="w-full md:w-[25%] flex items-center justify-center flex-col gap-y-4 px-10 text-white">
+                <img src="./assets/wallet-one.png" alt="">
+                <h1 class="text-xl font-semibold">Set Up Your Wallet</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio illo reprehenderit voluptates facere commodi sapiente quaerat deleniti aut aspernatur accusamus.</p>
+            </div>
+            <div class="w-full md:w-[25%] flex items-center justify-center flex-col gap-y-4 px-10 text-white">
+                <img src="./assets/triangle-round-rectangle.svg" alt="">
+                <h1 class="text-xl font-semibold">Set Up Your Wallet</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio illo reprehenderit voluptates facere commodi sapiente quaerat deleniti aut aspernatur accusamus.</p>
+            </div>
+            <div class="w-full md:w-[25%] flex items-center justify-center flex-col gap-y-4 px-10 text-white">
+                <img src="./assets/picture.png" alt="">
+                <h1 class="text-xl font-semibold">Set Up Your Wallet</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio illo reprehenderit voluptates facere commodi sapiente quaerat deleniti aut aspernatur accusamus.</p>
+            </div>
+            <div class="w-full md:w-[25%] flex items-center justify-center flex-col gap-y-4 px-10 text-white">
+                <img src="./assets/shopping-bag.svg" alt="">
+                <h1 class="text-xl font-semibold">Set Up Your Wallet</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio illo reprehenderit voluptates facere commodi sapiente quaerat deleniti aut aspernatur accusamus.</p>
+            </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="page6_for-background pb-1 mt-24"
-      style="background: linear-gradient(to right, blue, purple)"
-    >
-      <div
-        class="page6 text-white w-[100vw] m-auto flex justify-center pb-20 bg-[#160e2a]"
-      >
-        <div class="inside w-[90vw] flex flex-col items-center">
-          <h1 class="font-semibold text-5xl mb-14">Ready for Next NFT Drop?</h1>
-          <input
-            type="email"
-            class="focus:border-0 focus:outline-none bg-black w-80 h-12 p-6 py-3 text-xl rounded-md"
-            placeholder="Youremail@xyz.com"
-            />
-          <div class="flex justify-center mt-14">
-            <div
-              style="background: linear-gradient(to right, blue, purple)"
-              class="rounded-xl h-fit p-1"
-            >
-              <button class="text-xl bg-black text-white w-44 py-2 rounded-lg">
-                Send Email
-              </button>
-            </div>
-          </div>
+    </section>
+    <!-- Ready For Next Drop Email Section -->
+    <section class="bg-[#160e2a] py-10 pt-36 relative -top-28 left-0 right-0 -z-10">
+        <div class="flex items-center justify-center flex-col gap-y-10">
+            <h1 class="text-xl md:text-3xl text-white font-semibold tracking-[.2em]">Ready For Next NFT Drop?</h1>
+            <input class="h-14 w-80 bg-black text-white py-1 px-4" type="email" name="" id="" placeholder="youremail@xyz.com">
+            <div class="max-h-fit max-w-fit mx-auto p-[2px] bg-gradient-to-r from-blue-400 to-violet-700 flex items-center justify-center rounded-md hover:scale-105"><button class="py-2 px-5 lg:px-10 bg-black text-white font-bold rounded-md">Send Email</button></div>
         </div>
-      </div>
-    </div>
-    <div
-      class="page7 text-white w-[100vw] m-auto flex justify-center pt-16 pb-16 bg-[#0c071a]"
-    >
-      <div class="inside w-[90vw] flex flex-col">
-        <div class="one flex">
-          <div class="left w-1/2 flex flex-col justify-between">
-            <div class="">
-              <img src="./assets/logo.png" alt="" class="w-20 mb-6" />
-              <h1 class="text-2xl">
-                Amazing NFTs marketplace, Authentic and unique <br />digigtal
-                creation.
-              </h1>
+    </section>
+    <!-- footer section -->
+    <footer class="bg-gradient-to-r from-blue-400 to-violet-800 pt-1 -mt-28">
+        <div class="bg-[#0d0819]">
+            <div class="w-full p-5 flex items-center justify-center gap-y-10 flex-col md:flex-row text-white">
+                <div class="w-full md:w-2/5 flex items-start justify-center flex-col gap-y-10">
+                    <div>
+                        <img class="w-20" src="./assets/logo.png" alt="">
+                        <h1 class="font-semibold text-xl mt-3">Amazing NFTs Marketplace, Authentic and unique digital creation.</h1>
+                    </div>
+                    <div class="flex items-center justify-center gap-x-4">
+                        <div class="h-10 w-10 flex items-center justify-center bg-[#0d0819] border-2 border-white rounded-[50%] cursor-pointer hover:scale-105">
+                            <img class="w-3/5" src="./assets/whatsapp.png" alt="">
+                        </div>
+                        <div class="h-10 w-10 flex items-center justify-center bg-[#0d0819] border-2 border-white rounded-[50%] cursor-pointer hover:scale-105">
+                            <img class="w-2/5" src="./assets/fb.png" alt="">
+                        </div>
+                        <div class="h-10 w-10 flex items-center justify-center bg-[#0d0819] border-2 border-white rounded-[50%] cursor-pointer hover:scale-105">
+                            <img class="w-3/5" src="./assets/insta.png" alt="">
+                        </div>
+                        <div class="h-10 w-10 flex items-center justify-center bg-[#0d0819] border-2 border-white rounded-[50%] cursor-pointer hover:scale-105">
+                            <img class="w-3/5" src="./assets/yt.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/5 flex items-center justify-evenly text-">
+                    <div>
+                        <h1 class="font-semibold text-xl">Marketplace</h1>
+                        <ul class="mt-8">
+                            <li class="py-2 font-medium hover:scale-105">Explore</li>
+                            <li class="py-2 font-medium hover:scale-105">NFTs</li>
+                            <li class="py-2 font-medium hover:scale-105">Collectibles</li>
+                            <li class="py-2 font-medium hover:scale-105">Virtual Reality</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-xl">Resource</h1>
+                        <ul class="mt-8">
+                            <li class="py-2 font-medium hover:scale-105">Help Center</li>
+                            <li class="py-2 font-medium hover:scale-105">Partners</li>
+                            <li class="py-2 font-medium hover:scale-105">Blog</li>
+                            <li class="py-2 font-medium hover:scale-105">News Letter</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-xl">Company</h1>
+                        <ul class="mt-8">
+                            <li class="py-2 font-medium hover:scale-105">About us</li>
+                            <li class="py-2 font-medium hover:scale-105">Careers</li>
+                            <li class="py-2 font-medium hover:scale-105">Support</li>
+                            <li class="py-2 font-medium hover:scale-105">News Letter</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="flex gap-6">
-              <img
-                src="./assets/whatsapp.png"
-                alt=""
-                class="border-4 border-purple-900 rounded-full px-2 py-2"
-              />
-              <img
-                src="./assets/fb.png"
-                alt=""
-                class="border-4 border-purple-900 rounded-full px-4 py-2"
-              />
-              <img
-                src="./assets/insta.png"
-                alt=""
-                class="border-4 border-purple-900 rounded-full px-3 py-2"
-              />
-              <img
-                src="./assets/yt.png"
-                alt=""
-                class="border-4 border-purple-900 rounded-full px-2 py-2"
-              />
+            <div class="w-full py-5 px-10 flex items-center justify-between flex-col md:flex-row gap-y-3 text-gray-300">
+                <div>
+                    <p>Copyright 2022 spphire, All Right Reserved</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center gap-x-5">
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="right flex justify-between w-1/2">
-            <div class="card text-2xl gap-10 flex flex-col">
-              <h1 class="text-3xl mb-5 font-semibold">Marketplace</h1>
-              <p class="">Explore</p>
-              <p class="">NFTs</p>
-              <p class="">Collectibles</p>
-              <p class="">Virtual Reality</p>
-            </div>
-            <div class="card text-2xl gap-10 flex flex-col">
-              <h1 class="text-3xl mb-5 font-semibold">Resources</h1>
-              <p class="">Help Center</p>
-              <p class="">Partners</p>
-              <p class="">Blog</p>
-              <p class="">Newsletter</p>
-            </div>
-            <div class="card text-2xl gap-10 flex flex-col">
-              <h1 class="text-3xl mb-5 font-semibold">Marketplace</h1>
-              <p class="">About Us</p>
-              <p class="">Careers</p>
-              <p class="">Support</p>
-              <p class="">Newsletter</p>
-            </div>
-          </div>
         </div>
-        <div class="two flex mt-24 justify-between text-2xl text-[#aaaaaa]">
-          <h1 class="">Copyright 2022 sapphire, All right reserved.</h1>
-          <div class="flex gap-5">
-            <h1 class="">Privacy Policy</h1>
-            <h1 class="">Terms & Conditions</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </footer>
+    
+</body>
 </html>
